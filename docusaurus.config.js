@@ -1,7 +1,7 @@
 module.exports = {
   title: 'My Docs Site',
   tagline: 'Technical documentation made simple',
-  url: 'https://localhost',
+  url: process.env.NODE_ENV === 'production' ? 'https://my-docs-site-abc123.onrender.com' : 'https://localhost',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -19,7 +19,7 @@ module.exports = {
           sidebarItemsGenerator: async function({ defaultSidebarItemsGenerator }) {
             return defaultSidebarItemsGenerator(...arguments);
           },
-          editUrl: 'https://github.com/terrytaylorbonn/391_my-docs-site/edit/main/',
+          editUrl: 'https://github.com/terrytaylorbonn/427_my-docs-site/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -39,7 +39,7 @@ module.exports = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/terrytaylorbonn/391_my-docs-site',
+          href: 'https://github.com/terrytaylorbonn/427_my-docs-site',
           label: 'GitHub',
           position: 'right',
         },

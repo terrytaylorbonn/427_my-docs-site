@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-docs-site
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run serve
+    publishPath: ./build
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 18
