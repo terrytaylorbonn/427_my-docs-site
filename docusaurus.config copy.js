@@ -30,7 +30,7 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: 'My Docs Site CPLT30',
+      title: 'My Docs Site',
       items: [
         {
           type: 'doc',
@@ -54,7 +54,6 @@ module.exports = {
       appId: '6B0P0R08FS',
       apiKey: '853723f13c4712cb093ef196a181f04d',
       indexName: 'my-docs-site',
-      contextualSearch: false,
     },
     // ############## 
   },
