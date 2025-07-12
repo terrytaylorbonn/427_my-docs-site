@@ -9,6 +9,18 @@ module.exports = {
   organizationName: 'terrytaylorbonn',
   projectName: 'my-docs-site',
 
+  // Algolia domain verification ##############
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: 'FF14F5E36F82A306',
+      },
+    },
+  ],
+  // ##############
+
   presets: [
     [
       'classic',
