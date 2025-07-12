@@ -1,7 +1,7 @@
 module.exports = {
   title: 'My Docs Site',
   tagline: 'Technical documentation made simple',
-  url: process.env.NODE_ENV === 'production' ? 'https://my-docs-site-abc123.onrender.com' : 'https://localhost',
+  url: process.env.NODE_ENV === 'production' ? 'https://four27-my-docs-site.onrender.com' : 'https://localhost',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
