@@ -1,0 +1,20 @@
+# Robots.txt for My Docs Site
+# Generated for SEO optimization
+
+User-agent: *
+Allow: /
+
+# Disallow search and tag pages to prevent duplicate content issues
+Disallow: /search
+Disallow: /tags/
+Disallow: /blog/tags/
+
+# Allow important pages
+Allow: /
+Allow: /intro
+Allow: /tutorial-basics/
+Allow: /tutorial-extras/
+Allow: /blog/
+
+# Sitemap location
+Sitemap: https://four27-my-docs-site.onrender.com/sitemap.xml

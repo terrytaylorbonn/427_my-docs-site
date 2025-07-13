@@ -8,6 +8,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'terrytaylorbonn',
   projectName: 'my-docs-site',
+  trailingSlash: false,
 
   // Algolia domain verification ##############
   headTags: [
@@ -237,12 +238,20 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        // Sitemap configuration ##############
+        // (2.1) Enhanced Sitemap configuration ##############
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: [
+            '/tags/**',
+            '/blog/tags/**',
+            '/search',
+            '**/_category_/**',
+            '**/authors/**',
+            '**/archive',
+          ],
           filename: 'sitemap.xml',
+          lastmod: 'date',
         },
         // ##############
       },
